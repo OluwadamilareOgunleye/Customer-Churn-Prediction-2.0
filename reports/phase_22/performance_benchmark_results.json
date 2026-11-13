@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-11-13T10:04:29Z",
+  "hardware_environment": {
+    "cpu_logical_cores": 8,
+    "cpu_physical_cores": 4,
+    "total_ram_gb": 15.79
+  },
+  "model_loading": {
+    "load_time_seconds": 0.8281,
+    "process_rss_mb": 196.54,
+    "model_memory_delta_mb": 14.36
+  },
+  "single_prediction_latency_ms": {
+    "trials": 200,
+    "mean_ms": 17.54,
+    "min_ms": 13.61,
+    "p50_ms": 18.26,
+    "p90_ms": 19.23,
+    "p95_ms": 19.74,
+    "p99_ms": 20.64,
+    "max_ms": 23.95
+  },
+  "batch_scaling": [
+    {
+      "batch_size": 10,
+      "elapsed_seconds": 0.0257,
+      "ms_per_record": 2.569,
+      "throughput_records_per_sec": 389.3
+    },
+    {
+      "batch_size": 50,
+      "elapsed_seconds": 0.0286,
+      "ms_per_record": 0.571,
+      "throughput_records_per_sec": 1750.8
+    },
+    {
+      "batch_size": 100,
+      "elapsed_seconds": 0.0462,
+      "ms_per_record": 0.462,
+      "throughput_records_per_sec": 2163.2
+    },
+    {
+      "batch_size": 250,
+      "elapsed_seconds": 0.0864,
+      "ms_per_record": 0.346,
+      "throughput_records_per_sec": 2893.1
+    },
+    {
+      "batch_size": 500,
+      "elapsed_seconds": 0.1252,
+      "ms_per_record": 0.25,
+      "throughput_records_per_sec": 3993.2
+    },
+    {
+      "batch_size": 1000,
+      "elapsed_seconds": 0.2344,
+      "ms_per_record": 0.234,
+      "throughput_records_per_sec": 4266.2
+    },
+    {
+      "batch_size": 1409,
+      "elapsed_seconds": 0.2761,
+      "ms_per_record": 0.196,
+      "throughput_records_per_sec": 5104.1
+    }
+  ]
+}

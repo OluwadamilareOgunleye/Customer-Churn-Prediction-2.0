@@ -1,0 +1,57 @@
+name: Model Training & Evaluation
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_notes:
+        description: 'Reason for retraining or candidate notes'
+        required: false
+        default: 'Manual workflow dispatch trigger'
+
+jobs:
+  train-and-evaluate:
+    name: Retrain & Validate Model Candidate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Execute Training & Evaluation
+        run: |
+          python scripts/train.py --config configs/train_config.json
+
+      - name: Validate Candidate Performance
+        run: |
+          python -c "
+          import json, sys
+          from churn_prediction.config import PHASE_15_REPORTS_DIR
+          with open(PHASE_15_REPORTS_DIR / 'training_run_summary.json', 'r') as f:
+              summary = json.load(f)
+          roc_auc = summary['metrics']['roc_auc']
+          recall = summary['metrics']['recall']
+          print(f'Candidate ROC-AUC: {roc_auc:.4f}, Recall: {recall:.4f}')
+          # Strict quality gate: candidate must achieve minimum acceptable baseline
+          if roc_auc < 0.80 or recall < 0.70:
+              print('Candidate failed minimum production threshold.')
+              sys.exit(1)
+          print('Candidate passed model validation quality gates. Pending manual governance review.')
+          "
+
+      - name: Upload Training Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-summary
+          path: reports/phase_15/training_run_summary.json

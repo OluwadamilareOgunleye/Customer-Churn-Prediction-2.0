@@ -1,0 +1,6 @@
+scenario,input_values,status,predicted_churn_prob,churn_flag_30
+Zero Tenure & Zero Charges,"{'Tenure Months': 0, 'Monthly Charges': 0.0, 'Total Charges': 0.0}",Success,0.0475,0
+Ultra Long Tenure (120 mos),"{'Tenure Months': 120, 'Monthly Charges': 80.0, 'Total Charges': 9600.0}",Success,0.0327,0
+Very High Monthly Bill ($300),"{'Tenure Months': 12, 'Monthly Charges': 300.0, 'Total Charges': 3600.0}",Success,0.2215,0
+Negative Monthly Bill (-$50),"{'Tenure Months': 6, 'Monthly Charges': -50.0, 'Total Charges': 100.0}",Success,0.0475,0
+"Extreme Total Charges ($50,000)","{'Tenure Months': 72, 'Monthly Charges': 120.0, 'Total Charges': 50000.0}",Success,0.0448,0

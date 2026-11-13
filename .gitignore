@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# Local Databases & Tracking Stores
+mlflow.db
+*.sqlite
+*.db
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+
+
+# Testing and coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# MLflow runtime data
+mlruns/
+mlflow.db
+
+# Temporary files
+*.log
+__pycache__/
+.ipynb_checkpoints/
+
+# Python environments
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Streamlit secrets
+.streamlit/secrets.toml

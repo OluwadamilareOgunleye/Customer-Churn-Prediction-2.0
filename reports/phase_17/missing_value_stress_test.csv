@@ -1,0 +1,7 @@
+feature_perturbed,perturbation_type,status,mean_abs_prob_delta,max_abs_prob_delta
+Total Charges,Set to NaN,Handled Successfully,0.0145,0.1314
+Monthly Charges,Set to NaN,Handled Successfully,0.0323,0.2238
+Tenure Months,Set to NaN,Handled Successfully,0.0649,0.2766
+Contract,Set to NaN,Handled Successfully,0.031,0.1691
+Payment Method,Set to NaN,Handled Successfully,0.0233,0.1491
+Internet Service,Set to NaN,Handled Successfully,0.0268,0.284

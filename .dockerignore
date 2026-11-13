@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+
+# Python cache & virtual environment
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info
+dist
+build
+
+# Testing & Coverage
+.pytest_cache
+.coverage
+htmlcov
+
+# IDE & OS
+.vscode
+.idea
+*.swp
+.DS_Store
+Thumbs.db
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment variables
+.env

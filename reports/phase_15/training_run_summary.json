@@ -1,0 +1,26 @@
+{
+  "run_id": "94aa55661d42478690ce1fb2c47a76ec",
+  "duration_seconds": 39.95,
+  "model_version": 1,
+  "status": "Production",
+  "metrics": {
+    "accuracy": 0.7665010645848119,
+    "precision": 0.5423728813559322,
+    "recall": 0.7700534759358288,
+    "f1": 0.63646408839779,
+    "roc_auc": 0.8570254979462141,
+    "pr_auc": 0.6740168320666293,
+    "threshold": 0.3,
+    "tp": 288,
+    "fp": 243,
+    "tn": 792,
+    "fn": 86
+  },
+  "best_hyperparameters": {
+    "classifier__class_weight": null,
+    "classifier__learning_rate": 0.03,
+    "classifier__max_iter": 100,
+    "classifier__max_leaf_nodes": 15,
+    "classifier__min_samples_leaf": 50
+  }
+}

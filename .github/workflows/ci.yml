@@ -1,0 +1,47 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  test:
+    name: Lint, Test & Validate
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest pytest-cov
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Code Quality & Linting
+        run: |
+          # Stop build if syntax errors or undefined names exist
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics --exclude=.venv,__pycache__,build,dist
+          # Warning check for complexity and line length (exit-zero)
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics --exclude=.venv,__pycache__,build,dist
+
+      - name: Run Pytest Test Suite
+        run: |
+          pytest tests/ -v --cov=src --cov=api --cov-report=term-missing --cov-fail-under=50
+
+      - name: API Smoke Test
+        run: |
+          python -c "from api.main import app; print('FastAPI app imported successfully without syntax or dependency errors')"

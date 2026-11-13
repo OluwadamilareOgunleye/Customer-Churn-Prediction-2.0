@@ -1,0 +1,36 @@
+{
+  "model_name": "HistGradientBoostingClassifier",
+  "best_hyperparameters": {
+    "classifier__class_weight": null,
+    "classifier__learning_rate": 0.03,
+    "classifier__max_iter": 100,
+    "classifier__max_leaf_nodes": 15,
+    "classifier__min_samples_leaf": 50
+  },
+  "standard_threshold_0.50": {
+    "accuracy": 0.8062455642299503,
+    "precision": 0.6723549488054608,
+    "recall": 0.5267379679144385,
+    "f1": 0.5907046476761619,
+    "roc_auc": 0.8570254979462141,
+    "pr_auc": 0.6740168320666293,
+    "threshold": 0.5,
+    "tp": 197,
+    "fp": 96,
+    "tn": 939,
+    "fn": 177
+  },
+  "calibrated_threshold": {
+    "accuracy": 0.7665010645848119,
+    "precision": 0.5423728813559322,
+    "recall": 0.7700534759358288,
+    "f1": 0.63646408839779,
+    "roc_auc": 0.8570254979462141,
+    "pr_auc": 0.6740168320666293,
+    "threshold": 0.3,
+    "tp": 288,
+    "fp": 243,
+    "tn": 792,
+    "fn": 86
+  }
+}

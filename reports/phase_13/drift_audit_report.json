@@ -1,0 +1,302 @@
+{
+  "reference_records": 5634,
+  "current_records": 1409,
+  "numerical_drift": {
+    "Tenure Months": {
+      "psi": 0.0067,
+      "ks_statistic": 0.0212,
+      "p_value": 0.6835,
+      "status": "Stable",
+      "ref_mean": 32.49,
+      "cur_mean": 31.92
+    },
+    "Monthly Charges": {
+      "psi": 0.0124,
+      "ks_statistic": 0.0321,
+      "p_value": 0.1912,
+      "status": "Stable",
+      "ref_mean": 64.93,
+      "cur_mean": 64.09
+    },
+    "Total Charges": {
+      "psi": 0.0076,
+      "ks_statistic": 0.0296,
+      "p_value": 0.271,
+      "status": "Stable",
+      "ref_mean": 2299.33,
+      "cur_mean": 2201.36
+    }
+  },
+  "categorical_drift": {
+    "Gender": {
+      "psi": 0.0004,
+      "status": "Stable",
+      "category_shifts": {
+        "Female": {
+          "baseline_pct": 49.72,
+          "current_pct": 48.76
+        },
+        "Male": {
+          "baseline_pct": 50.28,
+          "current_pct": 51.24
+        }
+      }
+    },
+    "Senior Citizen": {
+      "psi": 0.0002,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 16.33,
+          "current_pct": 15.76
+        },
+        "No": {
+          "baseline_pct": 83.67,
+          "current_pct": 84.24
+        }
+      }
+    },
+    "Partner": {
+      "psi": 0.0002,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 48.44,
+          "current_pct": 47.76
+        },
+        "No": {
+          "baseline_pct": 51.56,
+          "current_pct": 52.24
+        }
+      }
+    },
+    "Dependents": {
+      "psi": 0.0,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 23.09,
+          "current_pct": 23.14
+        },
+        "No": {
+          "baseline_pct": 76.91,
+          "current_pct": 76.86
+        }
+      }
+    },
+    "Phone Service": {
+      "psi": 0.0017,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 90.08,
+          "current_pct": 91.27
+        },
+        "No": {
+          "baseline_pct": 9.92,
+          "current_pct": 8.73
+        }
+      }
+    },
+    "Multiple Lines": {
+      "psi": 0.003,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 42.42,
+          "current_pct": 41.23
+        },
+        "No": {
+          "baseline_pct": 47.66,
+          "current_pct": 50.04
+        },
+        "No phone service": {
+          "baseline_pct": 9.92,
+          "current_pct": 8.73
+        }
+      }
+    },
+    "Internet Service": {
+      "psi": 0.0002,
+      "status": "Stable",
+      "category_shifts": {
+        "DSL": {
+          "baseline_pct": 34.38,
+          "current_pct": 34.35
+        },
+        "No": {
+          "baseline_pct": 21.55,
+          "current_pct": 22.14
+        },
+        "Fiber optic": {
+          "baseline_pct": 44.07,
+          "current_pct": 43.51
+        }
+      }
+    },
+    "Online Security": {
+      "psi": 0.0003,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 28.81,
+          "current_pct": 28.11
+        },
+        "No": {
+          "baseline_pct": 49.65,
+          "current_pct": 49.75
+        },
+        "No internet service": {
+          "baseline_pct": 21.55,
+          "current_pct": 22.14
+        }
+      }
+    },
+    "Online Backup": {
+      "psi": 0.0044,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 35.11,
+          "current_pct": 32.01
+        },
+        "No": {
+          "baseline_pct": 43.34,
+          "current_pct": 45.85
+        },
+        "No internet service": {
+          "baseline_pct": 21.55,
+          "current_pct": 22.14
+        }
+      }
+    },
+    "Device Protection": {
+      "psi": 0.0004,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 34.58,
+          "current_pct": 33.64
+        },
+        "No": {
+          "baseline_pct": 43.88,
+          "current_pct": 44.22
+        },
+        "No internet service": {
+          "baseline_pct": 21.55,
+          "current_pct": 22.14
+        }
+      }
+    },
+    "Tech Support": {
+      "psi": 0.0008,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 29.27,
+          "current_pct": 28.03
+        },
+        "No": {
+          "baseline_pct": 49.18,
+          "current_pct": 49.82
+        },
+        "No internet service": {
+          "baseline_pct": 21.55,
+          "current_pct": 22.14
+        }
+      }
+    },
+    "Streaming TV": {
+      "psi": 0.0028,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 38.94,
+          "current_pct": 36.41
+        },
+        "No": {
+          "baseline_pct": 39.51,
+          "current_pct": 41.45
+        },
+        "No internet service": {
+          "baseline_pct": 21.55,
+          "current_pct": 22.14
+        }
+      }
+    },
+    "Streaming Movies": {
+      "psi": 0.001,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 39.1,
+          "current_pct": 37.54
+        },
+        "No": {
+          "baseline_pct": 39.35,
+          "current_pct": 40.31
+        },
+        "No internet service": {
+          "baseline_pct": 21.55,
+          "current_pct": 22.14
+        }
+      }
+    },
+    "Contract": {
+      "psi": 0.0001,
+      "status": "Stable",
+      "category_shifts": {
+        "Month-to-month": {
+          "baseline_pct": 55.06,
+          "current_pct": 54.86
+        },
+        "Two year": {
+          "baseline_pct": 24.12,
+          "current_pct": 23.85
+        },
+        "One year": {
+          "baseline_pct": 20.82,
+          "current_pct": 21.29
+        }
+      }
+    },
+    "Paperless Billing": {
+      "psi": 0.0001,
+      "status": "Stable",
+      "category_shifts": {
+        "Yes": {
+          "baseline_pct": 59.12,
+          "current_pct": 59.62
+        },
+        "No": {
+          "baseline_pct": 40.88,
+          "current_pct": 40.38
+        }
+      }
+    },
+    "Payment Method": {
+      "psi": 0.0004,
+      "status": "Stable",
+      "category_shifts": {
+        "Bank transfer (automatic)": {
+          "baseline_pct": 22.08,
+          "current_pct": 21.29
+        },
+        "Mailed check": {
+          "baseline_pct": 22.83,
+          "current_pct": 23.14
+        },
+        "Credit card (automatic)": {
+          "baseline_pct": 21.53,
+          "current_pct": 21.93
+        },
+        "Electronic check": {
+          "baseline_pct": 33.56,
+          "current_pct": 33.64
+        }
+      }
+    }
+  },
+  "alerts": [],
+  "overall_status": "All Features Stable"
+}

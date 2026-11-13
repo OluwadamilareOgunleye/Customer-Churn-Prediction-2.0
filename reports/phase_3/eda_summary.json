@@ -1,0 +1,13 @@
+{
+  "total_records": 7043,
+  "churn_rate": 0.2653698707936959,
+  "tenure_median_non_churn": 38.0,
+  "tenure_median_churn": 10.0,
+  "monthly_charges_median_non_churn": 64.42500000000001,
+  "monthly_charges_median_churn": 79.65,
+  "month_to_month_churn_rate": 0.4270967741935484,
+  "one_year_churn_rate": 0.11269517990495587,
+  "two_year_churn_rate": 0.02831858407079646,
+  "electronic_check_churn_rate": 0.4528541226215645,
+  "fiber_optic_churn_rate": 0.4189276485788114
+}

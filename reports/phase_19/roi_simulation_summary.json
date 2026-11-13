@@ -1,0 +1,38 @@
+[
+  {
+    "threshold": 0.3,
+    "targeted_customers": 531,
+    "true_positives_targeted": 288,
+    "false_positives_targeted": 243,
+    "saved_churners": 72,
+    "campaign_cost_usd": 26550.0,
+    "gross_revenue_saved_usd": 86400.0,
+    "net_profit_usd": 59850.0,
+    "roi_percent": 225.42,
+    "unmitigated_loss_usd": 103200.0,
+    "assumptions": {
+      "customer_lifetime_value_usd": 1200.0,
+      "campaign_cost_per_customer_usd": 50.0,
+      "intervention_success_rate": 0.25,
+      "acquisition_cost_usd": 400.0
+    }
+  },
+  {
+    "threshold": 0.5,
+    "targeted_customers": 293,
+    "true_positives_targeted": 197,
+    "false_positives_targeted": 96,
+    "saved_churners": 49,
+    "campaign_cost_usd": 14650.0,
+    "gross_revenue_saved_usd": 58800.0,
+    "net_profit_usd": 44150.0,
+    "roi_percent": 301.37,
+    "unmitigated_loss_usd": 212400.0,
+    "assumptions": {
+      "customer_lifetime_value_usd": 1200.0,
+      "campaign_cost_per_customer_usd": 50.0,
+      "intervention_success_rate": 0.25,
+      "acquisition_cost_usd": 400.0
+    }
+  }
+]
